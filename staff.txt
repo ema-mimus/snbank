@@ -1,1 +1,1 @@
-{"staff": [{"username": "jolismart", "password": "smart", "email": "jolismart@gmail.com", "full_name": "Joy Oduenyi"}, {"username": "emamimus", "password": "mimus", "email": "emamimus@gmail.com", "full_name": "Ema Mimus"}]}
+ {"Staff 1": {"Username": "jolismart", "Password": "smart", "Email": "jolismart@gmail.com", "Full Name": "Joy Oduenyi"}, "Staff 2": {"Username": "emamimus", "Password": "mimus", "Email": "emamimus@gmail.com", "Full Nanme": "Ema Mimus"}}

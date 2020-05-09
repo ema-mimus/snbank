@@ -2,6 +2,7 @@ import json
 import os
 import re
 from random import randint
+from datetime import datetime
 username = ''
 
 def random_with_N_digits(n):
@@ -21,6 +22,9 @@ def staff():
     elif choice == "2":
         account()
     elif choice == "3":
+        file = open('user_session.txt', 'r+')
+        file.truncate()
+        file.close()
         welcome()
     else:
         print('Wrong input')
@@ -130,6 +134,14 @@ def login():
             login()
         else:
             print(f'Welcome {username}')
+            login = datetime.now()
+            login = login.strftime("%d:%m:%Y %H:%M:%S")
+            session_data = {
+                'Present User': username,
+                'Login Time': login,
+            }
+            with open('user_session.txt', 'w') as file_object:
+                json.dump(session_data, file_object)
             staff()
                 
 
